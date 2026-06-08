@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "s21_matrix.h"
 
-
 int main(){
 
     s21_matrix_t mat;
@@ -15,7 +14,12 @@ int main(){
 
     printf("%.0f\n",mat.matrix[0][0]);
 
+//................remove..................//
 
+    s21_remove_matrix(&mat);
+    if(mat.matrix == NULL && mat.rows == 0 && mat.columns == 0){
+        printf("memory is free!\n");
+    }
 
     return 0;
 }
