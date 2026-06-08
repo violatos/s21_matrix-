@@ -1,7 +1,23 @@
 #include <stdio.h>
 #include "s21_matrix.h"
 
+<<<<<<< HEAD
+=======
+void s21_demo_create_matrix();
+
+
+>>>>>>> fd0f29f6422bbea682e6ef3143af9704f0a1e6f7
 int main(){
+
+    s21_demo_create_matrix();
+
+
+    return 0;
+}
+
+
+//=============s21_create_matrix=============
+void s21_demo_create_matrix(){
 
     s21_matrix_t mat;
 
@@ -14,6 +30,7 @@ int main(){
 
     printf("%.0f\n",mat.matrix[0][0]);
 
+<<<<<<< HEAD
 //................remove..................//
 
     s21_remove_matrix(&mat);
@@ -22,4 +39,6 @@ int main(){
     }
 
     return 0;
+=======
+>>>>>>> fd0f29f6422bbea682e6ef3143af9704f0a1e6f7
 }
