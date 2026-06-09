@@ -9,6 +9,9 @@
 
 #define TRUE 1
 #define FALSE 0
+#define SUCCESS 1
+#define FAILURE 0
+
 
 
 
@@ -31,10 +34,11 @@ typedef struct matrix_struct{
 enum ERROR_CODES {OK, INCORRECT_MATRIX, CALCULATION_ERROR};
 
 
-
 int s21_create_matrix(int rows, int columns, s21_matrix_t *result);
 
 void s21_remove_matrix(s21_matrix_t *A);
+
+int s21_eq_matrix(s21_matrix_t *c, s21_matrix_t *B);
 
 
 
