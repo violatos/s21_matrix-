@@ -40,6 +40,10 @@ void s21_remove_matrix(s21_matrix_t *A);
 
 int s21_eq_matrix(s21_matrix_t *c, s21_matrix_t *B);
 
+int s21_sum_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result);
+
+int s21_sub_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result);
+
 
 
 #endif
