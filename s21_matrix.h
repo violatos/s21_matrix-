@@ -44,6 +44,6 @@ int s21_sum_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result);
 
 int s21_sub_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result);
 
-
+int s21_mult_number(s21_matrix_t *A, double number, s21_matrix_t *result);
 
 #endif

@@ -5,7 +5,7 @@ int s21_sum_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result){
 
 
 //проверка на существование матрицы 
-    if(A == NULL || B == NULL){
+    if(A == NULL || B == NULL || result == NULL){
         return INCORRECT_MATRIX;//1
     }
     if(A->matrix == NULL || B->matrix == NULL){

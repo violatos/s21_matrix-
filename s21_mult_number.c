@@ -1,11 +1,10 @@
 #include "s21_matrix.h"
 
 
-int s21_sub_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result){
-
+int s21_mult_number(s21_matrix_t *A, double number, s21_matrix_t *result){
 
 //проверка на существование матрицы 
-    if(A == NULL || B == NULL || result == NULL){
+    if(A == NULL || result == NULL){
         return INCORRECT_MATRIX;//1
     }
     if(A->matrix == NULL || B->matrix == NULL){
@@ -19,19 +18,10 @@ int s21_sub_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result){
     }
     if(A->rows != B->rows || A->columns != B->columns){
         return CALCULATION_ERROR;//2
-    }
+    }    
 
-    for(int i = 0; i < A->rows; i++){
-        for(int j = 0; j < B->columns; j++){
-            result->matrix[i][j] = A->matrix[i][j] - B->matrix[i][j];
-        }
-    }
-
-    return OK;//0
 
 
 
 
 }
-
-
