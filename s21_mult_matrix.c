@@ -13,8 +13,15 @@ int s21_mult_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result){
         return INCORRECT_MATRIX;//1
     }
 
+    int status = s21_create_matrix(A->rows, B->columns, result);
 
+    if(status == OK){
+        for(int i = 0; i < A->rows; i++){
+            for(int j = 0; j < B->columns; j++){
+                result->matrix[i][j] = 
+            }
+        }
+    }
 
-
-
+    return status;
 }
