@@ -50,4 +50,6 @@ int s21_mult_matrix(s21_matrix_t *A, s21_matrix_t *B, s21_matrix_t *result);
 
 int s21_transpose(s21_matrix_t *A, s21_matrix_t *result);
 
+int s21_determinant(s21_matrix_t *A, double *result);
+
 #endif
