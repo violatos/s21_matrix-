@@ -52,4 +52,9 @@ int s21_transpose(s21_matrix_t *A, s21_matrix_t *result);
 
 int s21_determinant(s21_matrix_t *A, double *result);
 
+// s21_matrix_t *s21_create_minor(int excluded_row, int excluded_column, s21_matrix_t *A);
+
+void s21_create_minor(s21_matrix_t *A, int row, int col, s21_matrix_t *minor);
+
+
 #endif

@@ -4,13 +4,19 @@
 int main(){
 
     s21_matrix_t mat;
-    s21_create_matrix(2,2,&mat);
+    s21_create_matrix(3,3,&mat);
     double det;   
     
     mat.matrix[0][0] = 1.0;
-    mat.matrix[0][0] = 2.0;
-    mat.matrix[0][1] = 3.0;
-    mat.matrix[0][2] = 4.0;
+    mat.matrix[0][1] = 2.0;
+    mat.matrix[0][2] = 3.0;
+    mat.matrix[1][0] = 4.0;
+    mat.matrix[1][1] = 5.0;
+    mat.matrix[1][2] = 6.0;
+    mat.matrix[2][0] = 7.0;
+    mat.matrix[2][1] = 8.0;
+    mat.matrix[2][2] = 9.0;
+
 
     // mat.matrix[0][0] = 1.0;
     // mat.matrix[0][1] = 2.0;
