@@ -5,7 +5,7 @@ int main(){
 
     s21_matrix_t mat;
     s21_matrix_t result;
-    s21_create_matrix(4,4,&mat);
+    s21_create_matrix(3,3,&mat);
     //2x2////////////////////
     // mat.matrix[0][0] = 1.0;
     // mat.matrix[0][1] = 2.0;
@@ -48,7 +48,7 @@ int main(){
 
     int status = s21_calc_complements(&mat, &result);
     if(status == OK){
-        printf("result:%f\n", result.matrix[0][0]);
+        printf("result:%f\n", result.matrix[2][2]);
     }else{
         printf("OH NOOO");
     }
