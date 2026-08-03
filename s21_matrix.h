@@ -56,5 +56,7 @@ int s21_determinant(s21_matrix_t *A, double *result);
 
 void s21_create_minor(s21_matrix_t *A, int row, int col, s21_matrix_t *minor);
 
+int s21_calc_complements(s21_matrix_t *A, s21_matrix_t *result);
+
 
 #endif
