@@ -8,7 +8,7 @@ int s21_calc_complements(s21_matrix_t *A, s21_matrix_t *result){
     if (A->rows != A->columns) {
         return CALCULATION_ERROR;
     }
-    if (A->rows < 2) {
+    if (A->rows < 2) { 
         return INCORRECT_MATRIX;
     }
     // (2x2)
